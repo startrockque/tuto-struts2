@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+    <constant name="struts.devMode" value="true"/>
+    <constant name="struts.custom.i18n.resources" value="messages" />
+
+    <include file="example.xml"/>
+
+    <package name="default" namespace="/" extends="struts-default">
+        <default-action-ref name="index"/>
+
+        <action name="index">
+            <result type="redirectAction">
+                <param name="actionName">Index</param>
+                <param name="namespace">/actions</param>
+            </result>
+        </action>
+    </package>
+
+    <package name="actions" namespace="/actions" extends="struts-default">
+        <action name="Index" class="Index">
+            <result>/WEB-INF/actions/index.jsp</result>
+        </action>
+
+        <action name="HelloWorld" class="fr.orleans.miage.fr.example.HelloWorld">
+            <result>/example/HelloWorld.jsp</result>
+        </action>
+        
+        <action name="ActionParams" class="Actions" method="params">
+            <result>/WEB-INF/actions/action_params.jsp</result>
+        </action>
+
+        <action name="ActionRandomKey" class="Actions" method="randomKey">
+            <result name="page1">/WEB-INF/actions/page1.jsp</result>
+            <result name="page2">/WEB-INF/actions/page2.jsp</result>
+        </action>
+
+        <action name="ActionInter" class="Actions" method="inter">
+            <result>/WEB-INF/actions/page3.jsp</result>
+        </action>
+
+        <action name="ActionFirstFormSaisir" class="Actions" method="firstFormSaisie">
+            <result>/WEB-INF/actions/saisie.jsp</result>
+        </action>
+        <action name="ActionFirstFormConfirm" class="Actions">
+            <result>/WEB-INF/actions/confirm.jsp</result>
+        </action>
+
+        <action name="DoSomething" class="DoSomething">
+            <result>/WEB-INF/actions/doSomething.jsp</result>
+        </action>
+        <action name="DoSomethingElse" class="DoSomethingElse">
+            <result>/WEB-INF/actions/doSomething.jsp</result>
+        </action>
+
+        <action name="ActionSessionForm" class="Actions" method="firstFormSaisie">
+            <result>/WEB-INF/actions/saisie2.jsp</result>
+        </action>
+        <action name="ActionSessionFormConfirm" class="Actions" method="formSessionConfirmer">
+            <result>/WEB-INF/actions/confirm2.jsp</result>
+        </action>
+        <action name="ActionSessionFormEffacer" class="Actions" method="formSessionEffacer">
+            <result>/WEB-INF/actions/saisie2.jsp</result>
+        </action>
+
+        <action name="Form" class="Forms">
+            <result>/WEB-INF/forms/form.jsp</result>
+        </action>
+        <action name="Form1" class="Forms">
+            <result>/WEB-INF/forms/form1.jsp</result>
+        </action>
+        <action name="Form2" class="Forms">
+            <result>/WEB-INF/forms/form2.jsp</result>
+        </action>
+
+    </package>
+
+</struts>
