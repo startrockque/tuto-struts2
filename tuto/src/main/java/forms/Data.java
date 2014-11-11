@@ -1,12 +1,11 @@
-import com.opensymphony.xwork2.ActionSupport;
+package forms;
 
 /**
- * Created by Fabien on 10/11/2014.
+ * Created by Fabien on 11/11/2014.
  */
-public class Forms extends ActionSupport {
+public class Data {
 
-    public Forms(){}
-
+    public Data(){}
 
     private String textfield = "texte";
     private String password = "secret";
@@ -161,11 +160,4 @@ public class Forms extends ActionSupport {
         this.hidden = hidden;
     }
 
-    public String getSubmitText() {
-        return submitText;
-    }
-
-    public void setSubmitText(String submitText) {
-        this.submitText = submitText;
-    }
 }

@@ -1,3 +1,5 @@
+package actions;
+
 import com.opensymphony.xwork2.ActionSupport;
 
 /**
@@ -11,12 +13,12 @@ public class DoSomethingElse extends ActionSupport {
 
     @Override
     public String execute(){
-        System.out.println("DoSomethingElse.execute");
+        System.out.println("actions.DoSomethingElse.execute");
         return SUCCESS;
     }
 
     public String action2(){
-        System.out.println("DoSomethingElse.action2");
+        System.out.println("actions.DoSomethingElse.action2");
         return SUCCESS;
     }
 }

@@ -47,5 +47,15 @@
             <s:url id="url8" action="Form"/>
             <s:a href="%{url8}">Gros formulaire</s:a>
         </p>
+
+        <p>
+            <s:url id="url9" action="Form1"/>
+            <s:a href="%{url9}">Gros formulaire mais cette fois il y a 2 classes au lieu d'une</s:a>
+        </p>
+
+        <p>
+            <s:url id="url10" action="Form2"/>
+            <s:a href="%{url10}">Gros formulaire mais cette fois on implémente ModelDriven</s:a>
+        </p>
     </body>
 </html>
