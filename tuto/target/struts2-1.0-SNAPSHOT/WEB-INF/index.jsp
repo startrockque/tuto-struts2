@@ -57,5 +57,10 @@
             <s:url id="url10" action="Form2"/>
             <s:a href="%{url10}">Gros formulaire mais cette fois on implémente ModelDriven</s:a>
         </p>
+
+        <p>
+            <s:url id="url11" action="Form3"/>
+            <s:a href="%{url11}">Formulaire avec des listes</s:a>
+        </p>
     </body>
 </html>

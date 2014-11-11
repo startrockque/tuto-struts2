@@ -76,6 +76,9 @@
             <result>/WEB-INF/forms/form2.jsp</result>
         </action>
 
+        <action name="Form3" class="forms.Form3">
+            <result>/WEB-INF/forms/form3.jsp</result>
+        </action>
     </package>
 
 </struts>

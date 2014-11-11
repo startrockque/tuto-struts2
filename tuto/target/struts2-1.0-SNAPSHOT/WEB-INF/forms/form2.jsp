@@ -6,7 +6,7 @@
 </head>
 <body background="<s:url value="/images/back2.jpg"/>">
 <s:include value="../include_lien_menu.jsp"/>
-<p> Ici la classe Form2 implémente la classe ModelDriven ce qui lui donne accés à la fonction getModel() qui va retourner un modèle (ici Data), on a alors accès directement aux champs de Data comme s'ils étaient propriétés de la classe Form2.\n On a donc le même code jsp que la page form1.jsp.</p>
+<p> Ici la classe Form2 implémente la classe ModelDriven ce qui lui donne accés à la fonction getModel() qui va retourner un modèle (ici Data), on a alors accès directement aux champs de Data comme s'ils étaient propriétés de la classe Form2. On a donc le même code jsp que la page form1.jsp.</p>
 <h2><s:text name="form.titre"/></h2>
 <h3><s:text name="form.langues"/></h3>
 <ul>
